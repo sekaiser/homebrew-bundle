@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-if Version.new(HOMEBREW_VERSION) < Version.new("4.2.15")
-  odie "Your Homebrew is too outdated for `brew bundle`. Please run `brew update`!"
-end
+# Does not work well with nix-homebrew
+# if Version.new(HOMEBREW_VERSION) < Version.new("4.2.15")
+#   odie "Your Homebrew is too outdated for `brew bundle`. Please run `brew update`!"
+# end
 
 require "abstract_command"
 
